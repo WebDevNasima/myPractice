@@ -1,0 +1,666 @@
+:root {
+  --color: #1d2026;
+  --color0: #ff3d00;
+  --color1: #02627d;
+  --color2: #fff;
+  --color3: #008cb4;
+  --color4: #ffb727;
+  --color5: #20b38e;
+  --color6: #305871;
+  --color7: #fcc7c7;
+  --color8: #000000b3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container-fluid {
+  padding: 0 !important;
+}
+
+nav {
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: var(--color2);
+  padding: 0.8% 2% !important;
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+nav ul li a {
+  margin: 5px;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: var(--color) !important;
+  font-family: "Raleway";
+}
+nav ul li a:last-child {
+  margin-right: 0;
+}
+ul li a:hover {
+  text-decoration: none;
+  color: var(--color0) !important;
+  font-weight: 500;
+}
+
+.fa-sharp {
+  font-size: 10px;
+}
+.hire-btn {
+  padding: 12px 18px;
+  transition: 0.4s;
+  margin-left: 40px;
+  font-size: 16px;
+  color: var(--color2) !important;
+  background: var(--color0);
+}
+.hire-btn:hover {
+  background: #cc3102;
+  color: var(--color2) !important;
+}
+
+#banner {
+  max-width: 100%;
+  width: 100%;
+}
+#banner img {
+  width: 100%;
+  max-height: 65vh;
+}
+
+#myDetails {
+  /* background: #edfdfd; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.myPic img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 20px;
+  margin-top: -100px;
+}
+.myInfo {
+  text-align: center;
+}
+.myInfo h1 {
+  color: var(--color0);
+  font-family: "Raleway", serif;
+  word-spacing: 3px;
+  font-size: 30px;
+}
+.myInfo h4 {
+  color: var(--color3);
+}
+
+.login-btn-H {
+  border: none;
+  font-weight: bold;
+  margin-top: 5px;
+  background: transparent;
+}
+.login-btn-H a {
+  transition: 0.5s;
+  border: 1px solid var(--color0);
+  padding: 5px;
+
+  color: var(--color0);
+}
+.login-btn-H a:hover {
+  background: var(--color0);
+  color: var(--color2);
+}
+#blog {
+  padding: 3% 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  /* background: #edfdfd; */
+}
+#blog img {
+  margin: 10px;
+  width: 240px;
+  height: 220px;
+}
+/*=============== Offer Section Here======================= */
+#offer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: radial-gradient(#fff, #ffe0e0);
+  padding: 6% 5% 3%;
+  min-height: 400px;
+}
+#offer h3 {
+  font-size: 40px;
+  font-family: "Raleway", serif;
+}
+.offerL {
+  width: 50%;
+  margin-right: 20px;
+}
+.offerR {
+  width: 50%;
+}
+.offerR p {
+  width: 95%;
+}
+.offerL img {
+  width: 380px;
+  height: 250px;
+}
+
+.offer-btn {
+  background: var(--color0);
+  margin-left: 0;
+  color: #fff;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+.offer-btn:hover {
+  background: #cc3102;
+  color: #fff !important;
+}
+
+/*======================== Portfolio Section start ==================*/
+#portfolio {
+  padding: 5% 4%;
+  background: rgb(237, 253, 253);
+}
+.portfolioTitle h3 {
+  margin: 30px;
+  color: var(--color3);
+}
+.portfolioTitle p {
+  width: 70%;
+  margin: 0 auto;
+}
+.portfolioBody {
+  padding: 5% 2%;
+}
+.portfolioBody .box {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 0 2rem;
+}
+
+.div-group .div {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: 20px;
+  border: 1px solid #6a6b70;
+}
+.div img {
+  transition: 0.5s;
+}
+.div img:hover {
+  transform: scale(1.1);
+}
+.div .menu {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  transition: 0.6s;
+}
+
+.portfolioBody .div-group:hover .div .menu {
+  bottom: 0;
+}
+.menu a {
+  height: 30px;
+  line-height: 30px;
+  font-size: 17px;
+  width: 50%;
+  background: var(--color3);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.div .menu a:hover {
+  background: var(--color0);
+}
+
+/*======================== Footer StarT ===========================*/
+/* Quick Section  */
+#quick {
+  display: flex;
+  align-items: center;
+  background: var(--color8);
+  justify-content: space-between;
+  color: var(--color2);
+  padding: 2%;
+  font-size: 14px;
+  margin-top: -10px;
+}
+.dddd a {
+  display: inline-block !important;
+}
+.dddd i {
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  padding: 10px;
+  font-size: 22px;
+  transition: 0.4s;
+  background: #eeeeee;
+  margin: 10px;
+  margin-left: 0;
+  color: var(--color8);
+}
+.dddd i:hover {
+  color: var(--color0) !important;
+  transform: scale(1.1);
+}
+
+#quick ul li {
+  margin: 10px 0;
+  text-align: left;
+}
+#quick ul li a {
+  color: var(--color2);
+}
+
+#quick h5 {
+  margin-bottom: 20px;
+}
+.center-footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  background: var(--color);
+  color: #fff;
+  padding: 20px;
+  padding-bottom: 0;
+}
+#footer a {
+  color: #fff;
+  font-size: 22px;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+/*============================== Responsive Here ========================*/
+
+@media screen and (max-width: 992px) {
+  .myPic img {
+    width: 230px;
+    height: 230px;
+    margin-top: -110px;
+  }
+  #blog img {
+    width: 200px;
+    height: 210px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+  .offerR,
+  .offerL {
+    text-align: center;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .offerR p {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .myInfo h1 {
+    font-size: 24px;
+  }
+}
+
+/* ===========(min-width: 768px) and (max-width: 875px) ======== */
+@media screen and (min-width: 768px) and (max-width: 875px) {
+}
+
+/* ===========(max-width: 875px)========  */
+@media screen and (max-width: 875px) {
+  #pricing {
+    padding: 2%;
+  }
+
+  .card {
+    width: 250px;
+    padding: 20px;
+    margin: 20px 15px;
+  }
+  .card ul li {
+    font-size: 12px;
+  }
+  .card p {
+    font-size: 12px;
+  }
+  .card h2 {
+    font-size: 20px;
+  }
+  .contact-btn {
+    visibility: hidden;
+    display: none;
+  }
+
+  .aboutBody {
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 10%;
+  }
+  .aboutBody-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutBody-left p {
+    text-align: center;
+    max-width: 80%;
+  }
+  .aboutBody-left,
+  .aboutBody-right {
+    max-width: 100%;
+    padding-left: 0;
+  }
+}
+/* =========(max-width: 768px)========  */
+@media screen and (max-width: 768px) {
+  #pricing .pricing-card {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .service-left,
+  .service-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  #about .row {
+    text-align: center;
+  }
+  .h2-H {
+    text-align: center !important;
+    margin-top: 20px;
+  }
+  #quick {
+    padding: 4% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .center-footer {
+    display: none;
+  }
+  .contact-footer {
+    margin-top: 30px;
+  }
+
+  #quick ul li {
+    margin: 5px 10px;
+    display: inline-block;
+  }
+  #quick p {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+  .hire-btn {
+    visibility: hidden;
+    display: none;
+  }
+  .contact-btn {
+    visibility: visible;
+    display: contents;
+  }
+  .myPic img {
+    width: 220px;
+    height: 220px;
+  }
+  #blog img {
+    width: 160px;
+    height: 170px;
+  }
+
+  .aboutBody-left,
+  .aboutBody-right {
+    max-width: 100%;
+  }
+
+  .yy {
+    z-index: 1;
+    margin-top: -5px;
+    background: var(--color5);
+  }
+  .offerL {
+    width: 60%;
+  }
+  .offerL img {
+    width: 280px;
+    height: 170px;
+  }
+
+  .contactL {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    border-bottom-left-radius: 0;
+  }
+
+  .contactR {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    border-top-right-radius: 0;
+  }
+
+  #offer h3 {
+    font-size: 30px;
+    font-family: "Raleway", serif;
+  }
+}
+
+/* =========(max-width: 576px)==========  */
+@media screen and (max-width: 576px) {
+  .aboutH-img {
+    width: 250px;
+    height: auto;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  #banner img {
+    max-height: 55vh;
+  }
+  .myPic img {
+    width: 175px;
+    height: 175px;
+    margin-top: -90px;
+  }
+  .myInfo h1 {
+    font-size: 25px;
+  }
+  .myInfo h4 {
+    font-size: 18px;
+  }
+
+  #blog img {
+    width: 130px;
+    height: 140px;
+  }
+  nav {
+    min-height: 15vh;
+  }
+  nav .logo {
+    width: 60px;
+  }
+  .nav-item a {
+    font-size: 18px;
+  }
+  .contact-btn {
+    display: block;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  .aboutBody-right span,
+  strong {
+    font-size: 11px;
+  }
+  #about p {
+    padding: 0 5%;
+    font-size: 14px;
+  }
+  .aboutBody {
+    padding: 5% 4%;
+  }
+  .aboutBody span {
+    font-size: 15px;
+  }
+  .aboutBody-right li {
+    display: block !important;
+  }
+
+  #offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 5%;
+  }
+  .offerR,
+  .offerL {
+    text-align: center;
+    margin-right: 0;
+    width: 100%;
+  }
+  #portfolio {
+    padding: 8% 5%;
+  }
+  #contact h3 {
+    font-size: 32px;
+  }
+  .service-left ul li {
+    font-size: 14px;
+  }
+  #about,
+  #services,
+  #pricing h2 {
+    font-size: 22px;
+  }
+}
+
+/* ==========(max-width: 500px)========== */
+@media screen and (max-width: 400px) {
+  .myPic img {
+    width: 150px;
+    height: 150px;
+    margin-top: -50px;
+  }
+  #blog {
+    flex-direction: column;
+  }
+
+  #blog img {
+    width: 200px;
+    height: 210px;
+  }
+  .offerL img {
+    width: 200px;
+  }
+  #offer h3 {
+    font-size: 24px;
+  }
+
+  footer p {
+    font-size: 13px;
+  }
+  .logo {
+    width: 70px;
+  }
+  .aboutBody-right {
+    padding-left: 0;
+  }
+  .aboutBody-left p {
+    padding-left: 0;
+    width: 100%;
+  }
+  #about,
+  #portfolio,
+  #contact p {
+    text-align: left !important;
+  }
+  .servicesTitle p {
+    text-align: left !important;
+    width: 100% !important;
+  }
+  #quick p {
+    text-align: left !important;
+    width: 100% !important;
+  }
+  #footer p {
+    text-align: right !important;
+  }
+  #footer a {
+    font-size: 18px;
+  }
+  #portfolio p {
+    text-align: left !important;
+  }
+  #offer p {
+    text-align: center !important;
+  }
+  .aboutBody-right li {
+    text-align: left;
+  }
+  .service-left h3 {
+    font-size: 20px !important;
+  }
+
+  .nav-item a {
+    font-size: 14px;
+  }
+}

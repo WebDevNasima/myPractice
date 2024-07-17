@@ -1,0 +1,449 @@
+:root {
+  --color: #1d2026;
+  --color0: #ff3d00;
+  --color1: #02627d;
+  --color2: #fff;
+  --color3: #008cb4;
+  --color4: #ffb727;
+  --color5: #20b38e;
+  --color6: #305871;
+  --color7: #fcc7c7;
+  --color8: #000000b3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none !important;
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container-fluid {
+  padding: 0 !important;
+}
+
+.active {
+  color: var(--color0) !important;
+}
+
+/*=================================== About Section ==================*/
+
+#about {
+  padding: 2% 2% 5%;
+  background: #fff;
+}
+h2 {
+  font-size: 40px;
+  font-family: "Raleway", serif;
+  text-align: center;
+  margin-bottom: -5px;
+  color: var(--color);
+}
+
+h2 span {
+  display: inline-block;
+  border-bottom: 1px solid var(--color0);
+  width: 50px;
+}
+.card h2 span {
+  border-bottom: none;
+  width: 80px;
+}
+.myBorder {
+  display: inline-block;
+  border-bottom: 2px solid var(--color0);
+  width: 120px;
+  background: transparent;
+}
+h2 span {
+  color: var(--color0);
+}
+.aboutTitle {
+  padding: 3% 2% 5%;
+  margin-bottom: 30px;
+}
+.aboutTitle p {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 40px;
+  word-spacing: 3px;
+}
+.aboutBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.aboutBody h3 {
+  color: var(--color3);
+  margin: 30px 0 15px;
+}
+.aboutBody-left {
+  max-width: 44%;
+  text-align: justify;
+}
+.aboutBody-left .aboutA-img {
+  width: 100%;
+  height: 240px;
+  margin: 0 auto;
+}
+.aboutBody-left .about-btn {
+  background: var(--color0);
+  border: none !important;
+  transition: 0.6s ease-in-out;
+  margin: 20px 0 30px;
+}
+
+.aboutBody-left .about-btn:hover {
+  background: #02627d;
+  transform: scale(1.08);
+}
+.aboutBody-right {
+  max-width: 56%;
+  padding-left: 30px;
+}
+
+.aboutBody-right span,
+strong {
+  font-size: 15px;
+}
+.personalInfo {
+  margin-bottom: 80px;
+  margin-top: -60px;
+}
+.personalInfo li {
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.fa-angle-right {
+  font-size: 17px;
+  color: var(--color4);
+}
+.happy {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 140px;
+  margin: 0 auto;
+}
+.pp {
+  z-index: 3;
+  background: var(--color3);
+  color: var(--color2);
+  margin-left: 40px;
+}
+.hh {
+  z-index: 2;
+  background: var(--color4);
+}
+.yy {
+  z-index: 1;
+  margin-top: -80px;
+  color: var(--color2);
+  background: var(--color0);
+}
+.happy i {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/* About-H section */
+#about .row .col-md-7 p {
+  font-size: 17px;
+  text-align: justify;
+  margin-bottom: 20px;
+  word-spacing: 3px;
+}
+h2 .color-text {
+  border-bottom: none !important;
+  color: var(--color0);
+}
+.about .row-H {
+  padding: 5% 4% 3%;
+}
+
+.aboutH-img {
+  width: 310px;
+  height: 400px;
+}
+.h2-H {
+  text-align: left;
+}
+.about h3 {
+  color: var(--color0);
+}
+.about h6 {
+  font-size: 20px;
+  color: var(--color3);
+  margin-top: 10px;
+}
+
+/*=============== Services Section Here======================= */
+
+#services {
+  padding: 4% 5% 6%;
+}
+#services h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.service-p {
+  font-size: 18px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.serviceBody {
+  padding: 3% 5% 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 70px;
+}
+.serviceBody h3 {
+  color: var(--color3);
+  margin-bottom: 30px;
+  font-family: "Raleway", serif;
+  margin-left: -60px;
+}
+.serviceBody h3 span {
+  display: inline-block;
+  border-bottom: 1px solid var(--color0);
+  width: 40px;
+}
+.service-left {
+  margin-bottom: 40px;
+}
+.service-right {
+  margin-top: -40px;
+}
+.serviceBody ul li {
+  margin: 12px 0;
+}
+.serviceBody ul li i {
+  color: var(--color0);
+}
+.nav-item a {
+  color: var(--color8);
+}
+
+.circle {
+  margin: 20px 0 0;
+  text-align: center;
+  border: 10px solid var(--color3);
+  width: 170px;
+  height: 170px;
+  padding: 20px 10px;
+
+  border-radius: 50%;
+  color: var(--color8);
+}
+.circle .amount-p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: -5px;
+}
+.circle .text-p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.circle i {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+/*========================Pricing  Start  ===================*/
+
+#pricing {
+  padding: 8% 5%;
+}
+
+.priceTitle {
+  text-align: center;
+  font-family: "Raleway", serif;
+  margin-bottom: 40px;
+}
+
+.pricing-card {
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 280px;
+  background: var(--color2);
+  padding: 20px;
+  margin: 30px 12px;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.card h2 {
+  font-size: 25px;
+  text-align: left;
+  color: var(--color0);
+}
+.card h2 span {
+  font-size: 14px;
+}
+.card ul li {
+  margin: 16px 0px;
+  font-size: 13px;
+}
+.card ul li i {
+  color: rgba(0, 0, 0, 0.5);
+}
+.card p {
+  font-size: 13px;
+  text-align: left;
+  margin-top: 10px;
+}
+.card-2 {
+  background: var(--color0);
+  color: var(--color2);
+  transform: scale(1, 1.1);
+}
+.card-2 h2 {
+  color: var(--color2);
+}
+
+.card-2 ul li i {
+  color: var(--color2);
+}
+
+.card a {
+  background: var(--color0);
+  text-align: center;
+  padding: 10px 20px;
+  color: var(--color2);
+  transition: 0.5s ease-in-out;
+}
+.card a:hover {
+  background: #b92c01;
+}
+
+.card-2 a {
+  background: var(--color2);
+
+  color: var(--color0);
+}
+.card-2 a:hover {
+  background: #e9e8e8;
+}
+/*========================Contact  Start  ===================*/
+#contact {
+  padding: 5% 13%;
+}
+.contactTitle h5 {
+  font-family: "Raleway", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--color0);
+}
+.contactTitle h3 {
+  font-size: 38px;
+  font-family: "Raleway", serif;
+  margin-bottom: 20px;
+  color: var(--color6);
+}
+.contactTitle p {
+  width: 80%;
+  margin: 0 auto 80px;
+}
+.contact-form {
+  background: #fff;
+  margin-top: 50px;
+  box-shadow: 0 0.5rem 1.5rem #0000001a;
+}
+
+.contactL {
+  padding: 5% 5% 0 4%;
+  background: var(--color6);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.contactL #email,
+#name {
+  padding: 8px 20px;
+  width: 100%;
+  margin: 5px;
+  border-radius: 4px;
+  border: none;
+}
+.contactL input:focus {
+  border: 1px solid var(--color0);
+}
+
+.contactL textarea:focus {
+  border: 1px solid var(--color0);
+}
+.contactL textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 1000px;
+  border: none;
+  background: var(--color4);
+  transition: 0.5s;
+}
+.send-btn a {
+  color: var(--color);
+  font-size: 18px;
+}
+.send-btn:hover {
+  background: #ca9936;
+}
+
+.contactR {
+  border-left: 1px solid #0000001a;
+  padding: 3% 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color7);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.contactR i {
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  border: 1px solid #6a6b70;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myFacebook,
+.myEmail {
+  color: #1d2026;
+  transition: 0.4s;
+}
+.media-body p a:hover {
+  color: #006400;
+  text-decoration: underline !important;
+}
+.media-body p {
+  font-size: 14px;
+}
